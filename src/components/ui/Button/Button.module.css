@@ -1,0 +1,68 @@
+.primary {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(209, 164, 255, 0.1);
+  border-radius: 18px;
+  background: #7b43ff;
+  box-shadow:
+    inset -0.2px -0.5px 0.5px rgba(255, 255, 255, 0.5),
+    inset 0.2px 0.5px 0.5px rgba(255, 255, 255, 0.54);
+}
+
+.gunpowder {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background: #21213a;
+  box-shadow: inset 0 1.30769px 0 rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  border: none;
+  color: #ffffff;
+}
+
+.green {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background: #05bd05;
+  box-shadow:
+    inset 0.2px 0.5px 0.5px rgba(255, 255, 255, 0.54),
+    inset -0.2px -0.5px 0.5px rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  border: none;
+  color: #ffffff;
+}
+
+.royalBlue {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+  border-radius: 18px;
+  border: none;
+  background: #6d45ff;
+  color: #ffffff;
+}
+
+.back {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background: #7b43ff;
+  border: 1px solid rgba(209, 164, 255, 0.1);
+  border-radius: 18px;
+  color: #ffffff;
+  box-shadow:
+    inset 0 0 0.5px 0 rgba(255, 255, 255, 0.5),
+    inset 0.2px 0.5px 0.5px rgba(255, 255, 255, 0.54);
+}

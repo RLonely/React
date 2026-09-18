@@ -1,0 +1,53 @@
+.promo-list__content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.promo-list__tabs {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 3px;
+  width: 263px;
+  height: 41px;
+  overflow-x: scroll;
+  background: #08021c;
+  border: 1px solid rgba(209, 164, 255, 0.1);
+  border-radius: 8px;
+  color: #ffffff;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.promo-list__tabs::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
+
+.promo-list__tab {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 31px;
+  gap: 4px;
+  white-space: nowrap;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: normal;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.promo-list__tab-active {
+  background: #3a0ca3;
+  border: 1px solid rgba(209, 164, 255, 0.1);
+}

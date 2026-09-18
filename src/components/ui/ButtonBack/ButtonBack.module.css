@@ -1,0 +1,21 @@
+.button__back {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  width: max-content;
+  align-items: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+.button__back-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFFFFF;
+  max-width: 270px;
+}

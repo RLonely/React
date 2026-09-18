@@ -1,0 +1,19 @@
+.header__right-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 13px;
+  height: 43px;
+}
+
+.header__right--button {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 12px;
+  color: #ffffff;
+}

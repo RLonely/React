@@ -1,0 +1,52 @@
+stages:
+  - build
+  - deploy
+
+.kaniko-build:
+  stage: build
+  image:
+    name: gcr.io/kaniko-project/executor:debug
+    entrypoint: [""]
+  before_script:
+    - mkdir -p /kaniko/.docker
+    - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
+
+build-app:
+  extends: .kaniko-build
+  script:
+    - /kaniko/executor
+      --context $CI_PROJECT_DIR
+      --dockerfile Dockerfile
+      --destination $CI_REGISTRY_IMAGE/app:$CI_COMMIT_SHORT_SHA
+      --destination $CI_REGISTRY_IMAGE/app:dev
+  rules:
+    - changes:
+        - src/**/*
+        - public/**/*
+        - nginx/**/*
+        - Dockerfile
+        - package.json
+        - package-lock.json
+
+.kubectl-deploy:
+  stage: deploy
+  image: bitnami/kubectl:latest
+  environment:
+    name: dev2
+  variables:
+    GIT_STRATEGY: none
+  before_script:
+    - mkdir -p $HOME/.kube
+    - echo "${K8S_CONFIG_DEV2}" | base64 -d > $HOME/.kube/config
+    - chmod 600 $HOME/.kube/config
+    - export KUBECONFIG=$HOME/.kube/config
+
+deploy-app:
+  extends: .kubectl-deploy
+  script:
+    - kubectl -n default rollout restart deployment test-react
+  needs:
+    - job: build-app
+      optional: true
+  only:
+    - dev

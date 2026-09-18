@@ -1,0 +1,77 @@
+.liveGame {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.liveGame__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: normal;
+  color: #ffffff;
+}
+
+.liveGame__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.liveGame__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 8px;
+  column-gap: 8px;
+  padding-left: 16px;
+  margin: 0 -16px;
+  overflow-x: scroll;
+}
+
+.liveGame__content::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
+
+.liveGame__item {
+  width: 114px;
+  height: 114px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.liveGame__item img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.liveGame__all {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: normal;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  color: #7940fd;
+}

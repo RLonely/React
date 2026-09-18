@@ -1,0 +1,127 @@
+.promo {
+  margin-top: 18px;
+}
+
+.promo__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: normal;
+  color: #ffffff;
+}
+
+.promo__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.promo__content {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-right: -10px;
+}
+
+.promo__item {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  min-width: 180px;
+  height: 220px;
+  background: #150d31;
+  border-radius: 14.3945px;
+  overflow: hidden;
+}
+
+.swiper__promo {
+  margin-top: 16px;
+}
+
+.swiper__promo-image {
+  height: 220px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.swiper__promo-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 220px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+button.promo__prev {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 34px;
+  height: 34px;
+  background: #21213a;
+  box-shadow: inset 0 1.30769px 0 rgba(255, 255, 255, 0.06);
+  border-radius: 6px;
+  border: none;
+}
+
+button.promo__next {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 34px;
+  height: 34px;
+  background: #21213a;
+  box-shadow: inset 0 1.30769px 0 rgba(255, 255, 255, 0.06);
+  border-radius: 6px;
+  border: none;
+}
+
+.promo__right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 22px;
+}
+
+.promo__right a {
+  text-decoration: none;
+}
+
+.promo__buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.promo__all {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: normal;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  color: #7940fd;
+}

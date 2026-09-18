@@ -1,0 +1,8 @@
+input {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}

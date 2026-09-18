@@ -1,0 +1,150 @@
+.promo-list__content {
+  gap: 16px;
+  margin: 0 0 16px 0;
+}
+
+.promo-item__title {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+.promo-item__title h4 {
+  max-width: 270px;
+}
+
+.promo-item__title a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background: #7b43ff;
+  border: 1px solid rgba(209, 164, 255, 0.1);
+  border-radius: 18px;
+  color: #ffffff;
+  box-shadow:
+    inset 0 0 0.6px 0.6px rgba(255, 255, 255, 0.5),
+    inset 0.2px 0.5px 0.5px rgba(255, 255, 255, 0.54);
+  min-width: 35px;
+  width: 35px;
+  height: 35px;
+}
+
+.PromoItem__bottom {
+  padding-top: 16px;
+  border-top: 1px solid #1f1048;
+}
+
+.PromoItem__bottom-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.PromoItem__bottom-description {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.games__content {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px 6px;
+  margin-top: 16px;
+}
+
+.games__background {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #180f3a;
+}
+
+.games__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.games__item {
+  display: flex;
+  flex-direction: column;
+  min-height: 114px;
+  width: 100%;
+  height: auto;
+  padding: 9px 7px;
+  justify-content: space-between;
+  z-index: 100;
+  position: relative;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+.games__item p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+
+.games__item button {
+  background-image: url("../../assets/icons/play.svg");
+  min-width: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  border: 0;
+  box-shadow:
+    inset -0.2px -0.5px 0.7px rgba(255, 255, 255, 0.5),
+    inset 0.2px 0.5px 0.7px rgba(255, 255, 255, 0.54);
+}
+
+.games__item span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  color: #ffffff;
+}
+
+.games__item-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.games__title {
+  display: flex;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  height: 100px;
+  line-height: 12px;
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+}

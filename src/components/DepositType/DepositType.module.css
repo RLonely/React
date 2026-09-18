@@ -1,0 +1,173 @@
+.depositCard {
+  background: #180F3A;
+  border-radius: 10px;
+  padding: 16px 16px 30px;
+  height: calc(100vh - 88px);
+}
+
+.depositCard__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 12px;
+  gap: 12px;
+  width: 100%;
+  max-width: 159px;
+  background: rgba(8, 2, 28, 0.2);
+  box-shadow: inset -0.2px -0.5px 0.5px rgba(255, 255, 255, 0.5), inset 0.2px 0.5px 0.5px rgba(255, 255, 255, 0.54);
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.depositCard__item img {
+  width: 100%;
+  height: 45px;
+  object-fit: contain;
+}
+
+.depositCard__item-title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 0;
+  margin: 0;
+}
+
+.depositCard__item-price {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #6B6777;
+}
+
+.depositCard__sum {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+
+.depositCard__input-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+}
+
+.depositCard__input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding: 3px 16px 3px 16px;
+  gap: 10px;
+  border: 0;
+  width: 100%;
+  min-height: 41px;
+  background: rgba(8, 2, 28, 0.2);
+  box-shadow: inset 0.2px 0.5px 0.5px rgba(255, 255, 255, 0.54), inset -0.2px -0.5px 0.5px rgba(255, 255, 255, 0.5);
+  border-radius: 18px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.depositCard__sum-select {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.depositCard__sum-select .depositCard__sum-money {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  min-width: 70px;
+  height: 35px;
+  box-shadow: inset -0.2px -0.5px 0.5px rgba(255, 255, 255, 0.5), inset 0.2px 0.5px 0.5px rgba(255, 255, 255, 0.54);
+  border-radius: 15px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.depositCard__sum-select .depositCard__sum-money.active {
+  background: #7B43FF;
+}
+
+.depositCard__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+  width: 100%;
+  min-height: 41px;
+  background: #7B43FF;
+  box-shadow: inset -0.2px -0.5px 0.5px rgba(255, 255, 255, 0.5), inset 0.2px 0.5px 0.5px rgba(255, 255, 255, 0.54);
+  border-radius: 18px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #FFFFFF;
+  border: 0;
+  margin-top: 16px;
+}
+
+.depositCard__button-help {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  margin: 16px auto 0;
+  min-height: 16px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  justify-content: center;
+}
+
+.depositCard___sum-error {
+  display: none;
+  margin-top: 8px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: #FF3D40;
+}
+
+/*.depositCard__input-error {*/
+/*  padding: 3px 15px 3px 15px;*/
+/*  border: 1px solid #FF3D40;*/
+/*  box-shadow: none;*/
+/*}*/

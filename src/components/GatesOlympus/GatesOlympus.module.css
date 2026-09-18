@@ -1,0 +1,77 @@
+.GatesOlympus {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  margin-top: 16px;
+  width: auto;
+  height: 176px;
+  border-radius: 15px;
+  background: url("../../assets/images/GatesOlympusBanner.jpg") no-repeat;
+  background-size: cover;
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+a.GatesOlympus {
+  text-decoration: none;
+}
+
+.GatesOlympus__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  width: 65%;
+  height: 39px;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #ffffff;
+  backdrop-filter: blur(2.5px);
+  border-radius: 11px;
+  padding: 7px 0 7px 14px;
+  z-index: 10;
+}
+
+.GatesOlympus__item img {
+  width: 27px;
+}
+
+.GatesOlympus__item--left {
+  display: flex;
+  flex-direction: row;
+  gap: 9px;
+  align-items: center;
+}
+
+.GatesOlympus__text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.GatesOlympus__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: normal;
+  color: #ffffff;
+}
+
+.GatesOlympus__desc {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: normal;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.GatesOlympus__shadow {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}

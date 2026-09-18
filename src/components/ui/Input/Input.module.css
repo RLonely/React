@@ -1,0 +1,38 @@
+.input__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.input__label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: normal;
+  color: #ffffff;
+}
+
+.input__item.input__item-error {
+  border: 1px solid #ff0000;
+}
+
+.input__error-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: normal;
+  color: #ff0000;
+}
+
+.input__item::placeholder {
+  color: #bdbdbd;
+}
+
+.input__item:focus {
+  border: 1px solid rgb(130, 78, 253);
+  box-shadow: none;
+  padding: 0 13px;
+}

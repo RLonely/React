@@ -1,0 +1,134 @@
+.bonuses__welcome {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  background: url("@/assets/icons/plug.jpeg") center no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  min-height: 217px;
+  justify-content: space-between;
+}
+
+.bonuses__welcome-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bonuses__welcome-image {
+  max-height: 100px;
+}
+
+.bonuses__welcome-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bonuses__progress {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 20px;
+  width: max-content;
+  height: 20px;
+  background: #8658B7;
+  border-radius: 9px;
+  position: relative;
+  overflow: hidden;
+}
+
+.bonuses__welcome-title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  color: #FFFFFF;
+  z-index: 10;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.bonuses__line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 35%;
+  height: 100%;
+  background: #05bc05;
+  z-index: 5;
+}
+
+.bonuses__text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 100px;
+  justify-content: center;
+}
+
+.bonuses__text-title {
+  margin: 0;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+.bonuses__text-desc {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #7B43FF;
+}
+
+.bonuses__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  height: 41px;
+  background: #7B43FF;
+  box-shadow: inset -0.2px -0.5px 0.5px rgba(255, 255, 255, 0.5), inset 0.2px 0.5px 0.5px rgba(255, 255, 255, 0.54);
+  border-radius: 18px;
+  border: none;
+  color: #FFFFFF;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.bonuses__timer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.bonuses__timer-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  min-width: 27px;
+  height: 20px;
+  background: rgba(123, 67, 255, 0.2);
+  border-radius: 5px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #FFFFFF;
+}

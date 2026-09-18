@@ -1,0 +1,30 @@
+#root {
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  margin: 0 16px;
+  padding: 0;
+  background: #08021c;
+  color: #ffffff;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Inter";
+  font-style: normal;
+  line-height: 20px;
+  letter-spacing: -0.04em;
+  margin: 0;
+  padding: 0;
+}

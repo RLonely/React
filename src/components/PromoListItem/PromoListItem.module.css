@@ -1,0 +1,83 @@
+.promoListItem {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.promoListItem .promoListItem__image {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 195.27px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.promoListItem span {
+  display: -webkit-box;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: normal;
+  color: #bdbdbd;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.promoListItem__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.promoListItem__left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.promoListItem__status {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 8px;
+  min-width: 34px;
+  height: 20px;
+  background: #05bd05;
+  border-radius: 9px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.promoListItem__date {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.promoListItem h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: normal;
+  color: #ffffff;
+}

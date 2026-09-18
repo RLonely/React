@@ -1,0 +1,25 @@
+.swiper__main {
+  margin-right: -16px;
+  padding-right: 16px;
+  border-radius: 10px;
+}
+
+.swiper__main-image {
+  height: 163px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.swiper__main-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 163px;
+  border-radius: 6px;
+  overflow: hidden;
+}

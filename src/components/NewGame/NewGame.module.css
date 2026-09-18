@@ -1,0 +1,89 @@
+.newGame {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 15px;
+}
+
+.newGame__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: normal;
+  color: #ffffff;
+}
+
+.newGame__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.newGame__content {
+  display: grid;
+  grid-auto-columns: 1fr 2fr;
+  gap: 8px;
+  grid-auto-flow: column;
+  padding-left: 16px;
+  margin: 0 -16px;
+  overflow-x: scroll;
+}
+
+.newGame__content::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
+
+.newGame__item {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.newGame__item:nth-child(3n + 1) {
+  grid-row: span 2;
+  width: 164px;
+}
+
+.newGame__item:nth-child(3n + 2),
+.newGame__item:nth-child(3n + 3) {
+  width: 114px;
+  height: 114px;
+}
+
+.newGame__item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.newGames__all {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: normal;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  color: #7940fd;
+}

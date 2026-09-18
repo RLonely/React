@@ -1,0 +1,75 @@
+.safety {
+  padding: 16px;
+  background: #180F3A;
+  border-radius: 10px;
+}
+
+.safety-title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFFFFF;
+  width: 100%;
+  border-bottom: 1px solid rgba(123, 67, 255, 0.2);
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+
+.safety-progress {
+  width: 84px;
+  display: flex;
+  height: 84px;
+  border-radius: 50%;
+  --progress: 33;
+  --scale-radius: 37px;
+  --scale-thikness: 5px;
+  --_angle: calc(1deg * var(--progress) * 360 / 100);
+  --_cap1-x: calc(50% + cos(-85deg) * var(--scale-radius));
+  --_cap1-y: calc(50% + sin(-90deg) * var(--scale-radius));
+  --_cap2-x: calc(50% + cos(var(--_angle) - 90deg) * var(--scale-radius));
+  --_cap2-y: calc(50% + sin(var(--_angle) - 90deg) * var(--scale-radius));
+  --_inner-r: calc(var(--scale-radius) - var(--scale-thikness));
+  --_outer-r: calc(var(--scale-radius) + var(--scale-thikness));
+  background: radial-gradient(circle var(--scale-thikness) at var(--_cap1-x) var(--_cap1-y), #05BD05 99%, transparent 100%), radial-gradient(circle var(--scale-thikness) at var(--_cap2-x) var(--_cap2-y), #05BD05 99%, transparent 100%), conic-gradient(#05BD05 calc(var(--progress) * 1%), #6B6777 0);
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.progress__value {
+  border-radius: 50%;
+  background: #180F3A;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.safety-verify {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #7B43FF;
+  margin: 16px 0 0 0;
+}
+
+.safety-verify__add {
+  width: 16px;
+  height: 16px;
+  margin-right: 12px;
+}
+
+.safety-verify__arrow {
+  margin-left: 4px;
+}

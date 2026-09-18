@@ -1,0 +1,128 @@
+.latestBets {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+
+.latestBets__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: normal;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.latestBets__tabs {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px;
+  width: auto;
+  height: 46px;
+  overflow-x: scroll;
+  background: #08021c;
+  border: 1px solid rgba(209, 164, 255, 0.1);
+  border-radius: 8px;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.latestBets__tabs::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
+
+.latestBets__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 12px;
+  gap: 4px;
+  white-space: nowrap;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: normal;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.latestBets__item-active {
+  background: #3a0ca3;
+  border: 1px solid rgba(209, 164, 255, 0.1);
+}
+
+.latestBets__table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 0 4px;
+}
+
+.latestBets__table tr {
+  display: flex;
+  flex-direction: row;
+}
+
+.latestBets__table td {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  width: 50%;
+  height: 32px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.latestBets__table-head {
+  width: 100%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.latestBets__table-head td:first-child {
+  border-bottom: 1px solid rgba(209, 164, 255, 0.1);
+}
+
+.latestBets__table-head td:last-child {
+  border-bottom: 1px solid rgba(209, 164, 255, 0.1);
+}
+
+.latestBets__table-head td {
+  padding: 12px 12px;
+  width: 100%;
+  background: #000017;
+}
+
+.latestBets__table .latestBets__green {
+  color: #05bd05;
+}
+
+.latestBets__table .latestBets__grey {
+  color: #bdbdbd;
+}

@@ -1,0 +1,19 @@
+.tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tasks__row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.tasks__button {
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: none;
+}

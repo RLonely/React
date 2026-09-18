@@ -1,0 +1,17 @@
+.fame__banner {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.fame__banner-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.fame__title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #FFFFFF;
+}

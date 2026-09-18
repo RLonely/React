@@ -1,0 +1,135 @@
+.deposit__bonus-info {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  color: #6B6777;
+  margin: 16px 0 8px;
+  padding: 0;
+}
+
+.deposit__bonus-title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+.deposit__bonus-content {
+  display: flex;
+  flex-direction: row;
+  padding: 12px;
+  width: 100%;
+  min-height: 79px;
+  background: linear-gradient(90deg, #7B43FF -3.99%, #1D114B 100%);
+  border-radius: 10px;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.deposit__bonus-content.active {
+  border: 1px solid #05BD05;
+  padding: 11px;
+}
+
+.deposit__bonus-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  margin-right: 12px;
+}
+
+.deposit__bonus-title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+.deposit__bonus-increase {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.deposit__bonus-image {
+  width: 60px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.deposit__bonus-image img {
+  pointer-events: none;
+  object-fit: none;
+}
+
+.deposit__checkbox {
+  appearance: none;
+  display: block;
+  position: relative;
+  user-select: none;
+  height: 20px;
+  width: 37px;
+  font-size: inherit;
+}
+
+.deposit__checkbox:before,
+.deposit__checkbox:after {
+  content: '';
+  display: block;
+  transition: 0.25s;
+}
+
+.deposit__checkbox:before {
+  position: relative;
+  min-height: 100%;
+  min-width: 100%;
+  border-radius: 16px;
+  user-select: none;
+  background: #180F3A;
+  box-shadow: inset -1px 2px 4px rgba(8, 2, 28, 0.38);
+}
+
+.deposit__checkbox:after {
+  position: absolute;
+  min-height: 16px;
+  min-width: 16px;
+  top: 2px;
+  border-radius: 50%;
+  user-select: none;
+  background: #7B43FF;
+  box-shadow: inset 0.2px 0.5px 0.5px rgba(255, 255, 255, 0.54), inset -0.2px -0.5px 0.5px rgba(255, 255, 255, 0.5);
+}
+
+.deposit__checkbox:not(:checked):after {
+  left: 2px;
+}
+.deposit__checkbox:checked:after {
+  left: 50%;
+  background: #180F3A;
+  box-shadow: inset 0.2px 0.5px 0.5px rgba(255, 255, 255, 0.54), inset -0.2px -0.5px 0.5px rgba(255, 255, 255, 0.5);
+}
+.deposit__checkbox:checked:before {
+  background: #783FFC;
+  box-shadow: inset -1px 2px 4px rgba(8, 2, 28, 0.38);
+}

@@ -1,0 +1,112 @@
+.archive__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.archive__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+  background: url("@/assets/images/bonuses-item-background.jpg") center no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  min-height: 217px;
+}
+
+.archive__card-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.archive__card-image {
+  max-height: 100px;
+}
+
+.archive__card-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.archive__card-top img {
+  margin-left: auto;
+}
+
+.archive__card-time {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #FFFFFF;
+  margin-top: auto;
+}
+
+.archive__text {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+}
+
+.archive__status {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 7px;
+  background: #FF3D40;
+  border-radius: 9px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  color: #FFFFFF;
+}
+
+.archive__text-title {
+  margin: 0;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+.archive__text-desc {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #7B43FF;
+}
+
+.archive__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  height: 41px;
+  background: #7B43FF;
+  box-shadow: inset -0.2px -0.5px 0.5px rgba(255, 255, 255, 0.5), inset 0.2px 0.5px 0.5px rgba(255, 255, 255, 0.54);
+  border-radius: 18px;
+  border: none;
+  color: #FFFFFF;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.archive__button:disabled {
+  color: #6B6777;
+  background: #2B1561;
+  box-shadow: none;
+}

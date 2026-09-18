@@ -1,0 +1,137 @@
+.user {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  background-image: url(@/assets/images/about-image-block.jpg);
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: right;
+}
+
+.user__info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.user__info-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.user__info-name {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.user__info-id {
+  display: flex;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFFFFF;
+  margin: 0;
+  gap: 5px;
+}
+
+.user__info-image {
+  width: 50px;
+  height: 50px;
+}
+
+.user__mid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user__mid-title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  color: #6B6777;
+}
+
+.user__mid-name {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #FFFFFF;
+  margin: 8px 0 0;
+}
+
+.cashback__percent {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #FFFFFF;
+  margin: 8px 0 0;
+}
+
+.user__experience-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 12px 0 0;
+}
+
+.experience__text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.experience__bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.experience__rank {
+  color: #6B6777;
+}
+
+.experience__rank-name {
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.experience__progress-bar {
+  height: 6px;
+  background: #6B6777;
+  border-radius: 10px;
+  margin: 8px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-bar__line {
+  width: 2%;
+  height: 100%;
+  background: #05BD05;
+  position: absolute;
+  left: 0;
+  top: 0;
+}

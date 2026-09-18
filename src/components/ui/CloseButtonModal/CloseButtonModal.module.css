@@ -1,0 +1,12 @@
+.modal__close {
+  background: transparent;
+  border: none;
+  margin: 0 auto;
+  min-width: 45px;
+  height: 45px;
+}
+
+.modal__close img {
+  width: 45px;
+  height: 45px;
+}

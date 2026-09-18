@@ -1,0 +1,79 @@
+footer {
+  margin-bottom: 12px;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.02em;
+  color: #bdbdbd;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.footer-logo img {
+  width: 128px;
+}
+
+.footer-logo__line {
+  border-bottom: 1px solid #7b43ff;
+  width: 100%;
+  opacity: 0.5;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 160px;
+}
+
+.footer-content {
+  display: flex;
+  color: white;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.footer-title {
+  text-transform: uppercase;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin: 0;
+}
+
+.footer-space {
+  margin-top: 20px;
+}
+
+.footer-content a {
+  color: white;
+  text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-content a:hover {
+  opacity: 0.7;
+}
